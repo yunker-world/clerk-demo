@@ -54,10 +54,10 @@ export async function POST(req: Request) {
 
   // Create user
   if (evt.type === "user.created") {
-    console.log("===============> user.created");
+    // console.log("===============> user.created");
     const { id, email_addresses, image_url, username, first_name, last_name } =
       evt.data;
-    console.log(evt.data);
+    // console.log(evt.data);
 
     const createdUser = await createUser({
       clerkId: id,
